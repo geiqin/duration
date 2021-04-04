@@ -4,8 +4,16 @@ import (
 	"fmt"
 	"github.com/geiqin/duration/audio/mp3"
 	"log"
+	"math"
 	"os"
+	"time"
 )
+
+//获取秒部分时间
+func GetSeconds(dur time.Duration) int64 {
+	t := math.Ceil(dur.Seconds())
+	return int64(t)
+}
 
 func main() {
 
@@ -20,6 +28,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	log.Println("sssss aa:", GetSeconds(dur))
 	fmt.Printf("%s duration: %s\n", f.Name(), dur)
 	// Output: fixtures/kick.wav duration: 204.172335ms
 

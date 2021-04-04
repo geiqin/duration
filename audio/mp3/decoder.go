@@ -4,12 +4,11 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"github.com/geiqin/duration/audio/mp3/id3v1"
+	"github.com/geiqin/duration/audio/mp3/id3v2"
 	"io"
 	"io/ioutil"
 	"time"
-
-	"github.com/mattetti/audio/mp3/id3v1"
-	"github.com/mattetti/audio/mp3/id3v2"
 )
 
 // Decoder operates on a reader and extracts important information

@@ -6,8 +6,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/mattetti/audio"
-	"github.com/mattetti/audio/riff"
+	"github.com/geiqin/duration/audio"
+	"github.com/geiqin/duration/audio/riff"
 )
 
 // Encoder encodes LPCM data into a wav containter.

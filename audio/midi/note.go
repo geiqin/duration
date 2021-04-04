@@ -1,11 +1,10 @@
 package midi
 
 import (
+	"github.com/geiqin/duration/audio"
 	"math"
 	"strconv"
 	"strings"
-
-	"github.com/mattetti/audio"
 )
 
 var Notes = []string{"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"}
